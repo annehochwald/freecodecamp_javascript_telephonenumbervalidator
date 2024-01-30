@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --phone-color: #013220;
+  --background: #3c516c;
+}
+
+body {
+  background: var(--background);
+  font-family: Tahoma, sans-serif;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 10px;
+}
+
+h1 {
+  color: white;
+  width: 100%;
+  max-width: 480px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.phone-container {
+  position: relative;
+  background: linear-gradient(to bottom, red,orange,yellow,green,blue,indigo,violet);
+  width: 250px;
+  height: 460px;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: 15px solid var(--phone-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-background {
+  background-color: var(--phone-color);
+  width: 100%;
+  height: 25px;
+}
+
+.phone-camera {
+  background: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+label {
+  margin: 15px auto 5px;
+  font-weight: bold;
+  background: var(--background);
+  padding: 12px;
+  border-radius: 30px;
+}
+
+#user-input {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid var(--phone-color);
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  height: 45px;
+  font-size: 17px;
+}
+
+.phone-footer {
+  background: var(--phone-color);
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-styles {
+  cursor: pointer;
+  width: 100px;
+  margin: 12px;
+  color: black;
+  font-size: 18px;
+  background: white;
+  background-image: linear-gradient(#ffffff, #708090);
+  border-color: white;
+  border-width: 3px;
+}
+
+#results-div {
+  display: none;
+  overflow-y: auto;
+  width: 100%;
+  margin-bottom: 0;
+  background: white;
+  border: 1px solid var(--phone-color);
+}
+
+.output-text {
+  font-size: 1.2rem;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 0;
+}
